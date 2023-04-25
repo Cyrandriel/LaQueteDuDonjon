@@ -20,7 +20,7 @@ public class Biblio {
     public static int[] creationBourse(String niveau){ 
         if(niveau.equals("2"))
             return new int[]{7,3,3,3,3};////
-        else return new int[]{5,3,3,3,3}; //nombre de gemme de chaque element Maudite Feu Eau Terre Air
+        else return new int[]{5,3,3,3,3}; //nombre de gemme de chaque element : Maudite Feu Eau Terre Air
     }
     
 //AFFICHAGE DE LA BOURSE
