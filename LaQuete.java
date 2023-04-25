@@ -26,7 +26,7 @@ public class LaQuete{
         else System.out.println("Vous avez raison.. de toute façon, vous auriez échouer :)");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
-//LES VARIATION
+//LES VARIATIONS
     public static String choixVariation() {
         String choix, valideLeChoix;
         boolean choixValide = false;

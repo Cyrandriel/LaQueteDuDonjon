@@ -1,7 +1,9 @@
 public class Biblio {
 //LES REGLES
     public static void regleJeu() {
-        System.out.println("Ceci sont les regle");
+        System.out.println("Vous êtes dans un fabuleux donjon et vous devez trouver un trésor. C'est simple me direz vous alors que je vous repondrais, absolument pas !");
+        System.out.println("Vous savez pas encore pourquoi mais quand vous verrez qu'a chaque tour il y a un esprit (ou un démon comme écrit dans le sujet) qui est entre les niveau 1 et 5 et qu'il faut piocher donc c'est que de l'aléatoire, il faut alors avoir beaucoup de chance.");
+        System.out.println("La bourse sera constituer d'un certain nombre de chaque élément et de maudite.");
     }
 //REGLE VARIATION
     public static void regleVariation() {
