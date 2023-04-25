@@ -51,7 +51,7 @@ public class LaQuete{
 //LE JEU
     public static void leJeu(String niveau) {
         char[][] carte = Biblio.creationCarte(niveau);
-        int[] emplacementJoueur = Biblio.emplacement(1, 0); //creation des emplacements
+        int[] emplacementJoueur = Biblio.emplacement(1, 0); //création des emplacements
 
         int[] emplacementTresor = Biblio.emplacement(Biblio.entierAleatoire(0, carte.length-1),Biblio.entierAleatoire(0, carte[0].length-1));
         boolean tresorTrouver = false;
@@ -66,7 +66,7 @@ public class LaQuete{
             emplacementJoueur = Biblio.deplacement(carte, emplacementJoueur);
             bourse = combat(bourse, emplacementJoueur, emplacementTresor, niveau, carte); 
             
-            if(bourse[0] == 0) // Recuperer voir si le trésor est trouver
+            if(bourse[0] == 0) // Voir si le trésor est trouvé
                 tresorTrouver = true;
             
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -98,9 +98,9 @@ public class LaQuete{
                 System.out.println("Vous fouillez la salle ");
                 if(niveau.equals("4"))
                     carte[emplacementJoueur[0]][emplacementJoueur[1]]= 'o';
-                if(emplacementJoueur[0]==emplacementTresor[0] && emplacementJoueur[1]==emplacementTresor[1]){ //Si le joueur est a l'emplacement du tresor
+                if(emplacementJoueur[0]==emplacementTresor[0] && emplacementJoueur[1]==emplacementTresor[1]){ //Si le joueur est à l'emplacement du tresor
                     System.out.println("le tresor a été trouvé");
-                    bourse[0] = 0; // il n'y a que si le tresor est trouver que les maudite sont a 0.
+                    bourse[0] = 0; // il n'y a que si le tresor est trouvé que les maudites sont a 0.
                 } else System.out.println("Vous ne trouvez rien, vous continuez donc votre chemin");
             }
         } else { if(niveau.equals("3") && Biblio.entierAleatoire(0, 10)<3){

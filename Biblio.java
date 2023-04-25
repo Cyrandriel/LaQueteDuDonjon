@@ -20,7 +20,7 @@ public class Biblio {
     public static int[] creationBourse(String niveau){ 
         if(niveau.equals("2"))
             return new int[]{7,3,3,3,3};////
-        else return new int[]{5,3,3,3,3}; //nombre de gemme de chaque element : Maudite Feu Eau Terre Air
+        else return new int[]{5,3,3,3,3}; //nombre de gemmes de chaque élément : Maudite Feu Eau Terre Air
     }
     
 //AFFICHAGE DE LA BOURSE
@@ -73,7 +73,7 @@ public class Biblio {
         boolean H = true,G = true,D = true,B = true;
 
         System.out.print("Deplacement disponible : ");
-        if(emplacementJoueur[1] < carte[0].length-1){ //Cette partie est pour savoir quels propositions seront affiché
+        if(emplacementJoueur[1] < carte[0].length-1){ //Cette partie est pour savoir quelles propositions seront affichés
             System.out.print("(H)HAUT  ");
         }else H = false;
         
@@ -98,7 +98,7 @@ public class Biblio {
             valide = true;
             System.out.println("choisir un deplacement valide ");
             choixDeplacement = Lire.S();
-            if(choixDeplacement.equals("H") && H) //Les proposition qui ne sont pas afficher sont invalides
+            if(choixDeplacement.equals("H") && H) //Les propositions qui ne sont pas affichées sont invalides
                 emplacementJoueur[1]+=1;
             else if (choixDeplacement.equals("D") && D)
                 emplacementJoueur[0]+=1;
