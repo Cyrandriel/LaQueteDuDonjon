@@ -1,6 +1,6 @@
 public class LaQuete{
     public static void main(String[] args) {
-        System.out.println("============LA QUETE DU DONJON============");
+        System.out.println("\n============LA QUETE DU DONJON============\n");
         System.out.println("Bienvenue dans ce fabuleux jeu, saurez vous trouver le trésor avant la fin ?");
         menu();
         System.out.println("Aurevoir o/");
@@ -13,7 +13,7 @@ public class LaQuete{
         String choix;
         
         do{
-            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("\nChoisir une proposition :");
             System.out.println("(1) Jouer       (2) Règle du jeu        (3)Quitter");
             System.out.println("Insérer votre choix : ");
@@ -24,14 +24,15 @@ public class LaQuete{
         }while(!choix.equals("1") && !choix.equals("3") );
         if(choix.equals("1"))
             leJeu(choixVariation());
-        else System.out.println("Vous avez raison.. de toute façon, vous auriez échouer :)");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        else System.out.println("Vous avez raison.. de toute façon, vous auriez échoué :)");
+        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 //LES VARIATIONS
     public static String choixVariation() {
         String choix, valideLeChoix;
         boolean choixValide = false;
         do{
+            System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("\nChoix de la variation : ");
             System.out.println("(0)Definition des différentes variations");
             System.out.println("(1)Niveau normal       (2)Niveau difficile     (3)Pas de pitié pour les lâches  (4)Cartographe");
@@ -59,6 +60,7 @@ public class LaQuete{
         int[] bourse = Biblio.creationBourse(niveau);
         int tour = 0;
         do{
+            System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
             tour++;
             System.out.println("Vous etes au tour " + tour);
             System.out.println("\nVoici le contenue de votre bourse :");
