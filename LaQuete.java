@@ -13,6 +13,7 @@ public class LaQuete{
         String choix;
         
         do{
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("\nChoisir une proposition :");
             System.out.println("(1) Jouer       (2) Règle du jeu        (3)Quitter");
             System.out.println("Insérer votre choix : ");

@@ -11,6 +11,7 @@ public class Biblio {
         System.out.println("Niveau difficile : nombre de gemme et la taille de la carte sont différente de normal");
         System.out.println("Pas de pitié pour les lâches : il y a une chance que l'esprit attaque en cas de fuite, ce qui ajoute une gemme maudite dans la bourse");
         System.out.println("Cartographe : Les salles déjà fouillé sont affiché sur la carte");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
 
 //EMPLACEMENT  (0 Colonne/ 1 Ligne)
