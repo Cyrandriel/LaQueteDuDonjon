@@ -1,3 +1,3 @@
 # NouvelleQuete
 Pouic
-https://github.com/jukyob/NouvelleQuete.git
+https://github.com/jukyob/LaQueteDuDonjon/
